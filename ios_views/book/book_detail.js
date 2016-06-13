@@ -1,10 +1,10 @@
-import React from 'react';
-import Util from './../common/util';
-import ServiceURL from './../common/service';
-import BookItem from './../common/book_item';
-import Header from './../common/header';
+var React = require('react');
+var Util = require('./../common/util');
+var ServiceURL = require('./../common/service');
+var BookItem = require('./book_item');
+var Header = require('./../common/header');
 
-import {
+var {
   StyleSheet,
   Text,
   View,
@@ -12,7 +12,7 @@ import {
   Image,
   ScrollView,
   TouchableOpacity
-} from 'react-native';
+} = require('react-native');
 
 module.exports = React.createClass({
   getInitialState: function() {
@@ -29,7 +29,7 @@ module.exports = React.createClass({
             <Header
               navigator={this.props.navigator}
               initObj={{
-                backName: '图书'，
+                backName: '图书',
                 title: this.state.data.title
               }}/>
             <BookItem row={this.state.data}/>

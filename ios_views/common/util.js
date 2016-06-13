@@ -4,10 +4,10 @@
  * 主要提供工具方法
  *
  */
-import React from 'react';
-import Dimensions from 'react-native';
+var React = require('react');
+var Dimensions = require('react-native');
 
-import {
+var {
   PixelRatio,
   ActivityIndicatorIOS
 } = React;

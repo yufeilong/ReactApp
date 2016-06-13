@@ -23,10 +23,10 @@ import {
 StatusBarIOS.setHidden(true);
 
 class DouApp extends Component {
-  getInitialState() {
-    return {
-      selectedTab: '图书'
-    };
+
+  constructor(props) {
+    super(props);
+    this.state = {selectedTab: '图书'};
   }
 
   render() {

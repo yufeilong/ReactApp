@@ -1,19 +1,19 @@
-import React from 'react';
-import Util from './util';
-import {
+var React = require('react');
+var Util = require('./util');
+var {
   StyleSheet,
   Text,
   View,
   TabBarIOS,
   TextInput
-} from 'react-native';
+} = require('react-native');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <View
+      <View>
         <TextInput style={[styles.flex_1, styles.input]} {...this.props}/>
-      ></View>
+      </View>
     );
   }
 });

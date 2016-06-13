@@ -1,7 +1,7 @@
-import Util from './../common/util' ;
-import Search from './../common/search' ;
-import ServiceURL from './../common/service' ;
-import webView from './../common/webview' ;
+var Util = require('./../common/util') ;
+var Search = require('./../common/search') ;
+var ServiceURL = require('./../common/service');
+var webView = require('./../common/webview');
 
 import React,{
     StyleSheet,
@@ -120,7 +120,7 @@ module.exports = React.createClass({
   }
 });
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   flex_1:{
     flex:1,
   },
