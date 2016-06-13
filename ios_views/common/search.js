@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactNative = require('react-native');
 var Util = require('./util');
 var {
   StyleSheet,
@@ -6,7 +7,7 @@ var {
   View,
   TabBarIOS,
   TextInput
-} = require('react-native');
+} = ReactNative;
 
 module.exports = React.createClass({
   render: function() {
@@ -18,7 +19,7 @@ module.exports = React.createClass({
   }
 });
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   flex_1: {
     flex: 1
   },

@@ -3,13 +3,14 @@
  * 封装Navigator
  * 所有场景的切换动画都是从底部往上，回退是从上往下
  */
-import React from 'react';
-import {
+var React = require('react');
+var ReactNative = require('react-native');
+var {
   StyleSheet,
   Text,
   View,
   Navigator
-} from 'react-native';
+} = ReactNative;
 
 module.exports = React.createClass({
   render() {

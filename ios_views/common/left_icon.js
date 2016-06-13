@@ -20,7 +20,7 @@ module.exports = React.createClass({
 
 const styles = StyleSheet.create({
   go: {
-    borderLefWidth: 4 * Util.pixel,
+    borderLeftWidth: 4 * Util.pixel,
     borderBottomWidth: 4 * Util.pixel,
     width: 15,
     height: 15,

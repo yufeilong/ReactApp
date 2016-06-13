@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactNative = require('react-native');
 var Util = require('./../common/util');
 var ServiceURL = require('./../common/service');
 var BookItem = require('./book_item');
@@ -12,7 +13,7 @@ var {
   Image,
   ScrollView,
   TouchableOpacity
-} = require('react-native');
+} = ReactNative;
 
 module.exports = React.createClass({
   getInitialState: function() {

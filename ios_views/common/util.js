@@ -5,12 +5,13 @@
  *
  */
 var React = require('react');
-var Dimensions = require('react-native');
+var ReactNative = require('react-native');
+var Dimensions = require('Dimensions');
 
 var {
   PixelRatio,
   ActivityIndicatorIOS
-} = React;
+} = ReactNative;
 
 module.exports = {
   /* 最小线宽 */

@@ -22,11 +22,17 @@ import {
 
 StatusBarIOS.setHidden(true);
 
-class DouApp extends Component {
+class ReactApp extends Component {
 
   constructor(props) {
     super(props);
     this.state = {selectedTab: '图书'};
+  }
+
+  getInitialState(){
+    return {
+      selectedTab: '图书'
+    };
   }
 
   render() {
@@ -70,4 +76,4 @@ class DouApp extends Component {
   }
 };
 
-AppRegistry.registerComponent('DouApp', () => DouApp);
+AppRegistry.registerComponent('ReactApp', () => ReactApp);

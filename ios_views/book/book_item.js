@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactNative = require('react-native');
 var Util = require('./../common/util');
 
 var {
@@ -7,7 +8,7 @@ var {
   ListView,
   Image,
   TouchableOpacity
-} = require('react-native');
+} = ReactNative;
 
 module.exports = React.createClass({
   render: function() {

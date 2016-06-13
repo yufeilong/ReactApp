@@ -1,16 +1,20 @@
+
+var React = require('react');
+var ReactNative = require('react-native');
+
 var Util = require('./../common/util') ;
 var Search = require('./../common/search') ;
 var ServiceURL = require('./../common/service');
 var webView = require('./../common/webview');
 
-import React,{
+var {
     StyleSheet,
     View,
     Text,
     ListView,
     Image,
     TouchableOpacity
-} from 'react-native';
+} = ReactNative;
 
 module.exports = React.createClass({
   getInitialState: function() {
