@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React from 'react';
 import Navigation from './ios_views/common/navigation';
 import Book from './ios_views/book/book_list';
 import Music from './ios_views/music/music';
@@ -17,12 +17,12 @@ import {
   View,
   TabBarIOS,
   ScrollView,
-  StatusBarIOS
+  StatusBar
 } from 'react-native';
 
-StatusBarIOS.setHidden(true);
+StatusBar.setHidden(true);
 
-class ReactApp extends Component {
+class ReactApp extends React.Component {
 
   constructor(props) {
     super(props);
