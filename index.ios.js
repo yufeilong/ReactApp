@@ -29,12 +29,6 @@ class ReactApp extends React.Component {
     this.state = {selectedTab: '图书'};
   }
 
-  getInitialState(){
-    return {
-      selectedTab: '图书'
-    };
-  }
-
   render() {
     return (
       <TabBarIOS tintColor="white" barTintColor="darkslateblue">

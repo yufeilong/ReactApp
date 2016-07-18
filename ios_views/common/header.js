@@ -16,7 +16,7 @@ module.exports = React.createClass({
   render: function() {
     let obj = this.props.initObj;
     return (
-      <View style={styles.header, styles.row, styles.center}>
+      <View style={[styles.header, styles.row, styles.center]}>
         <TouchableOpacity style={[styles.row, styles.center]} onPress={this._pop}>
           <Icon/>
           <Text style={styles.fontFFF}>{obj.backName}</Text>

@@ -4,6 +4,7 @@ var Util = require('./../common/util');
 
 var {
   StyleSheet,
+  View,
   Text,
   ListView,
   Image,
@@ -12,6 +13,7 @@ var {
 
 module.exports = React.createClass({
   render: function() {
+    var row = this.props.row;
     return (
       <TouchableOpacity style={[styles.row, styles.item]} {...this.props}>
         <View style={[styles.center]}>

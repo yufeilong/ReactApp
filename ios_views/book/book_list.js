@@ -15,7 +15,6 @@ var {
   ListView,
   Image,
   ScrollView,
-  ActivityIndicatorIOS,
   TouchableOpacity
 } = ReactNative;
 
@@ -36,6 +35,7 @@ var BookList = React.createClass({
             <Search placeholder='请输入图书的名称' onChangeText={this._changeText}/>
           </View>
           <TouchableOpacity style={styles.btn} onPress={this._search}>
+            <Text style={styles.fontFFF}>搜索</Text>
           </TouchableOpacity>
         </View>
         {
@@ -71,6 +71,7 @@ var BookList = React.createClass({
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 != r2});
     var that = this;
     var baseURL = ServiceURL.book_search + '?count=10&q=' + this.state.keyWords;
+    // 开启loading
     this.setState({
       show: false
     });

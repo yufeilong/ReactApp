@@ -10,7 +10,7 @@ var Dimensions = require('Dimensions');
 
 var {
   PixelRatio,
-  ActivityIndicatorIOS
+  ActivityIndicator
 } = ReactNative;
 
 module.exports = {
@@ -39,6 +39,6 @@ module.exports = {
         });
   },
   /* loading效果 */
-  loading: <ActivityIndicatorIOS color="#3E00FF"
+  loading: <ActivityIndicator color="#3E00FF"
             style = {{marginTop: 40, marginLeft: Dimensions.get('window').width/2-10}}/>
 };
