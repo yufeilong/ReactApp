@@ -1,8 +1,8 @@
-import React from 'react';
-import Icon from './left_icon';
-import Util from './util';
+var React = require('react');
+var Icon = require('./left_icon');
+var Util = require('./util');
 
-import {
+var {
   StyleSheet,
   Text,
   View,
@@ -10,19 +10,19 @@ import {
   Image,
   ScrollView,
   TouchableOpacity
-} from 'react-native';
+} = require('react-native');
 
 module.exports = React.createClass({
   render: function() {
     let obj = this.props.initObj;
     return (
-      <View style={styles.header, styles.row, styles.center}>
+      <View style={[styles.header, styles.row, styles.center]}>
         <TouchableOpacity style={[styles.row, styles.center]} onPress={this._pop}>
           <Icon/>
-          <Text style+{styles.fontFFF}>{obj.backName}</Text>
+          <Text style={styles.fontFFF}>{obj.backName}</Text>
         </TouchableOpacity>
         <View style={[styles.title, styles.center]}>
-          <Text style=[styles.fontFFF, styles.titlePos]
+          <Text style={[styles.fontFFF, styles.titlePos]}
             numberOfLines={1}>{obj.title}></Text>
         </View>
       </View>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   fontFFF: {
     color: '#fff',
     fontSize: 17,
-    fontWeight: 'blod'
+    fontWeight: 'bold'
   },
   title: {
     flex: 1

@@ -1,20 +1,23 @@
-import React from 'react';
-import Util from './../common/util';
+var React = require('react');
+var ReactNative = require('react-native');
+var Util = require('./../common/util');
 
-import {
+var {
   StyleSheet,
+  View,
   Text,
   ListView,
   Image,
   TouchableOpacity
-} from 'react-native';
+} = ReactNative;
 
 module.exports = React.createClass({
   render: function() {
+    var row = this.props.row;
     return (
       <TouchableOpacity style={[styles.row, styles.item]} {...this.props}>
         <View style={[styles.center]}>
-          <Image source={{uri: row.image} style={styles.book_img}}/>
+          <Image source={{uri: row.image}} style={styles.book_img}/>
         </View>
         <View style={styles.content}>
           <View>
@@ -38,7 +41,7 @@ module.exports = React.createClass({
   }
 });
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   row: {
     flexDirection: 'row'
   },
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
     marginBottom: 5,
     borderColor: '#ccc'
-  }
+  },
   book_img: {
     width: 80,
     height: 100,
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
   content: {
     marginTop: 10,
     marginBottom: 10
-  }
+  },
   publisher: {
     color: '#a3a3a3',
     fontSize: 13

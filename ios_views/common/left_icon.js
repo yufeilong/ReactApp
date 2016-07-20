@@ -11,7 +11,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <View>
-        <View style={style.go}>
+        <View style={styles.go}>
         </View>
       </View>
     )
@@ -20,11 +20,11 @@ module.exports = React.createClass({
 
 const styles = StyleSheet.create({
   go: {
-    borderLefWidth: 4 * Util.pixel,
+    borderLeftWidth: 4 * Util.pixel,
     borderBottomWidth: 4 * Util.pixel,
     width: 15,
     height: 15,
-    transform: [{routate: '45deg'}],
+    transform: [{rotate: '45deg'}],
     borderColor: '#FFF',
     marginLeft: 10
   }

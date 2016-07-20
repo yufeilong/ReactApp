@@ -4,13 +4,14 @@
  * 主要提供工具方法
  *
  */
-import React from 'react';
-import Dimensions from 'react-native';
+var React = require('react');
+var ReactNative = require('react-native');
+var Dimensions = require('Dimensions');
 
-import {
+var {
   PixelRatio,
-  ActivityIndicatorIOS
-} = React;
+  ActivityIndicator
+} = ReactNative;
 
 module.exports = {
   /* 最小线宽 */
@@ -38,6 +39,6 @@ module.exports = {
         });
   },
   /* loading效果 */
-  loading: <ActivityIndicatorIOS color="#3E00FF"
-            style = {{marginTop: 40, marginLeft: Dimensions.get('window').width/2-10}}/>
+  loading: <ActivityIndicator color="#3E00FF"
+            style = {{marginTop: 40, marginLeft: 0}}/>
 };

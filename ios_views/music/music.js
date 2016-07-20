@@ -1,16 +1,20 @@
-import Util from './../common/util' ;
-import Search from './../common/search' ;
-import ServiceURL from './../common/service' ;
-import webView from './../common/webview' ;
 
-import React,{
+var React = require('react');
+var ReactNative = require('react-native');
+
+var Util = require('./../common/util') ;
+var Search = require('./../common/search') ;
+var ServiceURL = require('./../common/service');
+var webView = require('./../common/webview');
+
+var {
     StyleSheet,
     View,
     Text,
     ListView,
     Image,
     TouchableOpacity
-} from 'react-native';
+} = ReactNative;
 
 module.exports = React.createClass({
   getInitialState: function() {
@@ -120,7 +124,7 @@ module.exports = React.createClass({
   }
 });
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   flex_1:{
     flex:1,
   },
