@@ -52,7 +52,7 @@ class ReactApp extends React.Component {
               selectedTab: '电影'
             });
           }}>
-          <Navigation component = {Book} />
+          <Navigation component = {Movie} />
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title='音乐'
@@ -63,7 +63,7 @@ class ReactApp extends React.Component {
               selectedTab: '音乐'
             });
           }}>
-          <Navigation component = {Book} />
+          <Navigation component = {Music} />
         </TabBarIOS.Item>
       </TabBarIOS>
     );
