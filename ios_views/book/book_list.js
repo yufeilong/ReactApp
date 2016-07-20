@@ -23,7 +23,7 @@ var BookList = React.createClass({
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     return {
       dataSource: ds.cloneWithRows([]),
-      keyWords: 'c语言',
+      keywords: 'c语言',
       show: false
     }
   },
@@ -70,7 +70,7 @@ var BookList = React.createClass({
   getData: function() {
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 != r2});
     var that = this;
-    var baseURL = ServiceURL.book_search + '?count=10&q=' + this.state.keyWords;
+    var baseURL = ServiceURL.book_search + '?count=10&q=' + this.state.keywords;
     // 开启loading
     this.setState({
       show: false

@@ -8,7 +8,7 @@ var {
   View
 } = ReactNative;
 
-module.exports = {
+module.exports = React.createClass({
   render: function() {
     return (
       <View>
@@ -23,9 +23,9 @@ module.exports = {
           contentInset={{top: -40}}
           startInLoadingState={true}
           style={{width:Util.size.width, height:Util.size.height - 50}}
-          url={this.props.url}>
+          source={{uri: this.props.url}}>
         </WebView>
       </View>
     );
   }
-};
+});
